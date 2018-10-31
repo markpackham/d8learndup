@@ -1,0 +1,4 @@
+name: Drupal Up tabs
+description: Custom tabs examples, so the paths /drupalup/tabs, /drupalup/tabs/first & /drupalup/tabs/second
+type: module
+core: 8.x

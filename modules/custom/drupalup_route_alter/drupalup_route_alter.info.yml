@@ -1,0 +1,4 @@
+name: Drupal Up route subscriber
+description: Redirect users from one url path to another, handy to confuse bots so /drupalup takes you to user & /drupalup/login takes you to user/login
+type: module
+core: 8.x
