@@ -1,0 +1,4 @@
+name: Drupal Up logexample
+description: Logging examples
+type: module
+core: 8.x
