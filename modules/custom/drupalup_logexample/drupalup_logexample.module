@@ -1,0 +1,13 @@
+<?php
+
+/*
+ * @file
+ * Our hooks here
+ */
+
+function drupalup_logexample_node_insert(
+	Drupal\Core\Entity\EntityInterface $entity
+) {
+	\Drupal::logger( 'drupalup_logexample' )
+	       ->info( 'drupalup_logexample says a new node is created' );
+}
