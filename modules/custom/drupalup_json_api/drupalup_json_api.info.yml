@@ -1,0 +1,4 @@
+name: Drupal Up Json API
+description: A simple JSON API example, path to trigger is /api/json
+core: 8.x
+type: module
