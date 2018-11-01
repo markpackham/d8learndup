@@ -1,0 +1,4 @@
+name: Drupal Up controller custom title
+description: Drupal Up controller custom title, path /drupalup/dynamictitle, gives titles at random "This is a great page", "This is a terrible page" or "Is this a page?"
+type: module
+core: 8.x

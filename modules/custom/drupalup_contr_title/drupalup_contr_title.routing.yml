@@ -1,0 +1,7 @@
+drupalup_contr_title.title_callback_page:
+  path: '/drupalup/dynamictitle'
+  defaults:
+    _controller: '\Drupal\drupalup_contr_title\Controller\CustomTitleController::dummyPage'
+    _title_callback: '\Drupal\drupalup_contr_title\Controller\CustomTitleController::titleCallback'
+  requirements:
+    _permission: 'access content'
