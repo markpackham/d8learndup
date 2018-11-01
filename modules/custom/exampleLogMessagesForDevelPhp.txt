@@ -1,0 +1,17 @@
+$message = 'Learning log messages';
+
+\Drupal::logger('my_module')->emergency($message);
+
+\Drupal::logger('my_module')->alert($message);
+
+\Drupal::logger('my_module')->critical($message);
+
+\Drupal::logger('my_module')->error($message);
+
+\Drupal::logger('my_module')->warning($message);
+
+\Drupal::logger('my_module')->notice($message);
+
+\Drupal::logger('my_module')->info($message);
+
+\Drupal::logger('my_module')->debug($message);
