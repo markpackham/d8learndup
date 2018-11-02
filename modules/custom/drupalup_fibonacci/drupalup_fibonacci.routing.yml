@@ -1,0 +1,7 @@
+drupalup_fibonacci.fibo_fibo:
+  path: 'fibi-form'
+  defaults:
+    _form: '\Drupal\drupalup_fibonacci\Form\FiboForm'
+    _title: 'Calculate some Fibonacci numbers'
+  requirements:
+    _permission: 'access content'
