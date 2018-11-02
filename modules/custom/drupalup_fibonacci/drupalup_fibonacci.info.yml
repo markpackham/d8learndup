@@ -1,4 +1,4 @@
 name: Drupal Up fibonacci numerical sequence
-description: Fibonacci numerical sequence service generator, look inside module for the file whatToPutInDevel.txt to figure out how it works
+description: Fibonacci numerical sequence service generator, form located here /fibi-form
 core: 8.x
 type: module

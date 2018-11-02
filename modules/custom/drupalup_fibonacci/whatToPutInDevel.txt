@@ -1,5 +1,0 @@
-Make sure Devel Kint is enabled so you can add this to /devel/php
-Paste the following below & execute, you can change the number used in calcSomeFibos()
-
-$fibo_service = Drupal::service('drupalup_fibonacci.calc_fibo');
-kint($fibo_service->calcSomeFibos(3));die();
