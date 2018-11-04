@@ -13,12 +13,12 @@ class ArticleController {
 	 */
 	public function page() {
 
-		$items = array(
-			array( 'name' => 'Article one' ),
-			array( 'name' => 'Article two' ),
-			array( 'name' => 'Article three' ),
-			array( 'name' => 'Article four' ),
-		);
+		$items = [
+			[ 'name' => 'Article one' ],
+			[ 'name' => 'Article two' ],
+			[ 'name' => 'Article three' ],
+			[ 'name' => 'Article four' ],
+		];
 
 
 		return [
