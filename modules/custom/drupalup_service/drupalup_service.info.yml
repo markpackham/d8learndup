@@ -1,0 +1,4 @@
+name: Drupal Up service
+description: An example module that declares an example service & an injection, please see "codeForDevel.txt" to learn how to execute
+type: module
+core: 8.x

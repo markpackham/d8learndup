@@ -1,0 +1,10 @@
+Please put either this (no injection used in the first one):
+
+$our_service = \Drupal::service('drupalup_service.cow');
+kint($our_service->saySomething());die();
+
+
+Or this in Devel's /devel/php section with Devel Kint enabled to execute:
+
+$our_service = \Drupal::service('drupalup_service.cow');
+kint($our_service->whoIsYourOwner());die();
