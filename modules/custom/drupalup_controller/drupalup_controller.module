@@ -1,0 +1,12 @@
+<?php
+
+/**
+ * Implements hook_theme().
+ */
+function drupalup_controller_theme( $existing, $type, $theme, $path ) {
+	return [
+		'article_list' => [
+			'variables' => [ 'items' => [], 'title' => '' ],
+		],
+	];
+}
