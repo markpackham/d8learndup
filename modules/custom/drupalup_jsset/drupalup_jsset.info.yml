@@ -1,0 +1,4 @@
+name: Drupal Up JS Set
+description: passing JS variables from controller, runs from /drupalup/js-example
+type: module
+core: 8.x
