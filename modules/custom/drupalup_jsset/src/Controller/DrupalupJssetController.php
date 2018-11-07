@@ -8,7 +8,7 @@ use Drupal\Core\Controller\ControllerBase;
  * Output of our JS page
  */
 
-class DrupalJssetController extends ControllerBase {
+class DrupalupJssetController extends ControllerBase {
 
 	/*
 	 * Rendering a js page
@@ -16,7 +16,7 @@ class DrupalJssetController extends ControllerBase {
 	public function jsPage() {
 		$build            = [];
 		$build['content'] = [
-			'#markup' => '<div class="js-var"' . $this->t( 'Our JS page' ) . '</div>',
+			'#markup' => '<div class="js-var">Our JS Page</div>',
 		];
 
 		//add our library
@@ -24,6 +24,7 @@ class DrupalJssetController extends ControllerBase {
 		//We get system site's name from \core\modules\system\config\install\system.site.yml
 		$build['#attached']['drupalSettings']['js_example']['title'] = $this->config( 'system.site' )
 		                                                                    ->get( 'name' );
+
 		return $build;
 	}
 
