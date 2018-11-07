@@ -1,7 +1,7 @@
-drupalup_jsset.js._example:
+drupalup_jsset.js_example:
   path: '/drupalup/js-example'
   defaults:
-    _controller: '\Drupal\drupalup_jsset\Controller\DrupalJssetController::jsPage'
-    _title: 'Drupal Up JS Example'
+    _title: 'Drupal Up js example'
+    _controller: '\Drupal\drupalup_jsset\Controller\DrupalupJssetController::jsPage'
   requirements:
     _permission: 'access content'
