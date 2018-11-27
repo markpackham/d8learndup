@@ -1,0 +1,16 @@
+<?php
+
+/*
+ * Implements hook_theme_suggestions_alter()
+ */
+function drupal_up_breakpoints_theme_suggestions_alter(
+	array &$suggestions,
+	array $variables,
+	$hook
+) {
+	//var_dump( $hook );
+	if ( $hook == 'node' ) {
+		//suggestions arrary is passed by REFERENCE, so we don't have to return it &$suggestions
+		$suggestions[] = 'node__drupal_up_breakpoints';
+	}
+}
