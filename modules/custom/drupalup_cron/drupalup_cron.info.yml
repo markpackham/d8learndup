@@ -1,0 +1,4 @@
+name: Drupal Up cron
+description: Use Cron run to change site's slogan from 0 if it isn't numeric & 1 if it is numeric
+type: module
+core: 8.x

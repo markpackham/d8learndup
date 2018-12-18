@@ -1,0 +1,24 @@
+<?php
+
+/*
+ * In a cron run change the site slogan found in
+ * \core\modules\system\config\install\system.site.yml
+ */
+
+/**
+ * Implements hook_cron().
+ */
+function drupalup_cron_cron() {
+	$slogan = \Drupal::service( 'config.factory' )
+	                 ->getEditable( 'system.site' )->get( 'slogan' );
+	if ( is_numeric( $slogan ) ) {
+		//using ++ won't work for a string & casting to int would be more work
+		$slogan = $slogan + 1;
+		\Drupal::service( 'config.factory' )
+		       ->getEditable( 'system.site' )->set( 'slogan', $slogan )->save();
+	} //if the slogan isn't a numerical value then set it to zero
+	else {
+		\Drupal::service( 'config.factory' )
+		       ->getEditable( 'system.site' )->set( 'slogan', 0 )->save();
+	}
+}
