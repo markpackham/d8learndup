@@ -1,0 +1,38 @@
+<?php
+
+/*
+ * @file
+ *
+ * Hook & preprocess functions
+ */
+
+/*
+ * Implements hook_preprocess_node()
+ */
+function drupal_up_renderapi_preprocess_node( &$variables ) {
+	//kint( $variables );
+	$variables['content']['our_custom_list']  = [
+		'#theme'      => 'item_list',
+		'#list_type'  => 'ul',
+		'#title'      => t( 'ul list on nodes via Render API from theme, drupal_up_renderapi' ),
+		'#items'      => [
+			'ul list item one',
+			'ul list item TWO',
+			'ul list item 3',
+			'ul list item iv',
+		],
+		'#attributes' => [ 'class' => 'my-list' ],
+	];
+	$variables['content']['our_custom_list2'] = [
+		'#theme'      => 'item_list',
+		'#list_type'  => 'ol',
+		'#title'      => t( 'ol list on nodes via Render API from theme, drupal_up_renderapi' ),
+		'#items'      => [
+			'ol list item',
+			'ol list item',
+			'ol list item',
+			'ol list item',
+		],
+		'#attributes' => [ 'class' => 'my-list' ],
+	];
+}
