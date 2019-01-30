@@ -1,4 +1,4 @@
-name: Drupal Up form validation
-description: Implementing an example of form validation here /validation-form
+name: Drupal Up form validation for characters entered
+description: Implementing an example of form validation here /validation-form, must be over 3 characters in name
 type: module
 core: 8.x
