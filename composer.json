@@ -6,7 +6,8 @@
     "require": {
         "composer/installers": "^1.0.24",
         "wikimedia/composer-merge-plugin": "^1.4",
-        "drupal/bootstrap_barrio": "^4.17"
+        "drupal/bootstrap_barrio": "^4.17",
+        "drupal/hook_event_dispatcher": "^1.20"
     },
     "replace": {
         "drupal/core": "^8.6"

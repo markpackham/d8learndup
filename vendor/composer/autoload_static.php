@@ -82,6 +82,7 @@ class ComposerStaticInitDrupal8
         ),
         'D' => 
         array (
+            'Drupal\\hook_event_dispatcher\\' => 29,
             'Drupal\\Driver\\' => 14,
             'Drupal\\Core\\Composer\\' => 21,
             'Drupal\\Core\\' => 12,
@@ -284,6 +285,10 @@ class ComposerStaticInitDrupal8
         'Goutte\\' => 
         array (
             0 => __DIR__ . '/..' . '/fabpot/goutte/Goutte',
+        ),
+        'Drupal\\hook_event_dispatcher\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/modules/contrib/hook_event_dispatcher/src',
         ),
         'Drupal\\Driver\\' => 
         array (

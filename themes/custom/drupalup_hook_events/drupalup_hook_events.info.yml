@@ -1,0 +1,6 @@
+name: Drupal Up Hook Events
+description: Events instead of hooks, create an article to trigger message "Hello from our changed renderable!"
+type: module
+code: 8.x
+dependancies:
+  - drupal:hook_event_dispatcher

@@ -1,0 +1,6 @@
+name: "Drupal Up hook events"
+description: "Events instead of hooks, trigger by createding an article then seeing this written, 'Hello from our changed renderable!'"
+type: module
+core: 8.x
+dependencies:
+  - "drupal:hook_event_dispatcher"
