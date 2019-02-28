@@ -1,0 +1,20 @@
+<?php
+
+/**
+ *@file
+ *Implementing hook_functions
+ */
+
+/**
+ * Implments hook_preprocess_page().
+ */
+
+function drupal_up_render_config_preprocess_page(&$variables)
+{
+    $storage = Drupal::service('entity_type.manager')->getStorage('config_pages')->load('custom_config');
+    $variables['footer_title'] = $storage->get('field_footer_title')->value;
+    $variables['footer_text'] = $storage->get('field_footer_text')->value;
+
+    //kint($variables);die();
+
+}
