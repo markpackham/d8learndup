@@ -1,0 +1,11 @@
+<?php
+
+use Drupal\Core\Site\Settings;
+
+/*
+Implements template_preprocess_page()
+ */
+function drupal_up_settings_preprocess_page(&$variables)
+{
+    $variables['heloween_title'] = Settings::get('heloween_title', 'Meow moo moo default answer');
+}
