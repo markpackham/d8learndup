@@ -950,7 +950,7 @@
         "version_normalized": "4.17.0.0",
         "source": {
             "type": "git",
-            "url": "https://git.drupal.org/project/bootstrap_barrio",
+            "url": "https://git.drupalcode.org/project/bootstrap_barrio.git",
             "reference": "8.x-4.17"
         },
         "dist": {
@@ -1036,7 +1036,7 @@
         "version_normalized": "1.20.0.0",
         "source": {
             "type": "git",
-            "url": "https://git.drupal.org/project/hook_event_dispatcher",
+            "url": "https://git.drupalcode.org/project/hook_event_dispatcher.git",
             "reference": "8.x-1.20"
         },
         "dist": {
@@ -1783,12 +1783,12 @@
         "version_normalized": "1.6.5.0",
         "source": {
             "type": "git",
-            "url": "https://github.com/mikey179/vfsStream.git",
+            "url": "https://github.com/bovigo/vfsStream.git",
             "reference": "d5fec95f541d4d71c4823bb5e30cf9b9e5b96145"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/mikey179/vfsStream/zipball/d5fec95f541d4d71c4823bb5e30cf9b9e5b96145",
+            "url": "https://api.github.com/repos/bovigo/vfsStream/zipball/d5fec95f541d4d71c4823bb5e30cf9b9e5b96145",
             "reference": "d5fec95f541d4d71c4823bb5e30cf9b9e5b96145",
             "shasum": ""
         },
@@ -2379,7 +2379,8 @@
         "keywords": [
             "mock",
             "xunit"
-        ]
+        ],
+        "abandoned": true
     },
     {
         "name": "psr/container",

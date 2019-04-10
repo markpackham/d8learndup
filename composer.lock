@@ -643,7 +643,7 @@
             "version": "4.17.0",
             "source": {
                 "type": "git",
-                "url": "https://git.drupal.org/project/bootstrap_barrio",
+                "url": "https://git.drupalcode.org/project/bootstrap_barrio.git",
                 "reference": "8.x-4.17"
             },
             "dist": {
@@ -694,7 +694,7 @@
             "version": "1.20.0",
             "source": {
                 "type": "git",
-                "url": "https://git.drupal.org/project/hook_event_dispatcher",
+                "url": "https://git.drupalcode.org/project/hook_event_dispatcher.git",
                 "reference": "8.x-1.20"
             },
             "dist": {
