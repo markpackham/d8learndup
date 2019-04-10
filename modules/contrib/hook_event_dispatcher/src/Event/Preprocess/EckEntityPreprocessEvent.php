@@ -5,13 +5,10 @@ namespace Drupal\hook_event_dispatcher\Event\Preprocess;
 /**
  * Class EckEntityPreprocessEvent.
  */
-final class EckEntityPreprocessEvent extends AbstractPreprocessEvent {
+final class EckEntityPreprocessEvent extends AbstractPreprocessEntityEvent {
 
   /**
-   * Get the hook name.
-   *
-   * @return string
-   *   Hook name.
+   * {@inheritdoc}
    */
   public static function getHook() {
     return 'eck_entity';

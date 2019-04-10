@@ -8,8 +8,6 @@ use Symfony\Component\EventDispatcher\Event;
 
 /**
  * Class ViewsDataEvent.
- *
- * @package Drupal\hook_event_dispatcher\Event\Views
  */
 final class ViewsDataEvent extends Event implements EventInterface {
 
@@ -29,7 +27,7 @@ final class ViewsDataEvent extends Event implements EventInterface {
    * @see \hook_views_data()
    */
   public function addData(array $data) {
-    $this->data = array_merge_recursive($this->data, $data);
+    $this->data = \array_merge_recursive($this->data, $data);
   }
 
   /**

@@ -5,8 +5,6 @@ namespace Drupal\hook_event_dispatcher\Event\Preprocess\Variables;
 /**
  * Class AbstractEventVariables.
  *
- * @package Drupal\hook_event_dispatcher\Event\Preprocess\Variables
- *
  * @SuppressWarnings(PHPMD.NumberOfChildren)
  */
 abstract class AbstractEventVariables {
@@ -40,7 +38,7 @@ abstract class AbstractEventVariables {
    *   Value for variable BY VALUE.
    */
   public function get($name, $default = NULL) {
-    return array_key_exists($name, $this->variables) ? $this->variables[$name] : $default;
+    return \array_key_exists($name, $this->variables) ? $this->variables[$name] : $default;
   }
 
   /**
