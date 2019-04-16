@@ -5,10 +5,13 @@ namespace Drupal\hook_event_dispatcher\Event\Preprocess;
 /**
  * Class NodePreprocessEvent.
  */
-final class NodePreprocessEvent extends AbstractPreprocessEntityEvent {
+final class NodePreprocessEvent extends AbstractPreprocessEvent {
 
   /**
-   * {@inheritdoc}
+   * Get the hook name.
+   *
+   * @return string
+   *   Hook name.
    */
   public static function getHook() {
     return 'node';

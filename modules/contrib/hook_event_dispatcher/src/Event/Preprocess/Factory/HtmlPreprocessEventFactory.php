@@ -11,14 +11,23 @@ use Drupal\hook_event_dispatcher\Event\Preprocess\Variables\HtmlEventVariables;
 final class HtmlPreprocessEventFactory implements PreprocessEventFactoryInterface {
 
   /**
-   * {@inheritdoc}
+   * Create the PreprocessEvent with EventVariables embedded.
+   *
+   * @param array $variables
+   *   Variables.
+   *
+   * @return \Drupal\hook_event_dispatcher\Event\Preprocess\HtmlPreprocessEvent
+   *   Created event.
    */
   public function createEvent(array &$variables) {
     return new HtmlPreprocessEvent(new HtmlEventVariables($variables));
   }
 
   /**
-   * {@inheritdoc}
+   * Get the Event hook name.
+   *
+   * @return string
+   *   The hook name.
    */
   public function getEventHook() {
     return HtmlPreprocessEvent::getHook();

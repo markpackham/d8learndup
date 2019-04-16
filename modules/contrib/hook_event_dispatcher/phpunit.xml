@@ -12,7 +12,6 @@
     <testsuites>
         <testsuite name="Test Suite">
             <directory>tests/src/</directory>
-            <directory>modules/*/tests/src</directory>
         </testsuite>
     </testsuites>
     <filter>

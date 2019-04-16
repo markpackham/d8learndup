@@ -10,6 +10,8 @@ use Drupal\hook_event_dispatcher\HookEventDispatcherInterface;
 
 /**
  * Class EntityAccessEvent.
+ *
+ * @package Drupal\hook_event_dispatcher\Event\Entity
  */
 class EntityAccessEvent extends BaseEntityEvent {
 

@@ -7,6 +7,8 @@ use Symfony\Component\EventDispatcher\Event;
 
 /**
  * Class BaseThemeSuggestionsEvent.
+ *
+ * @package Drupal\hook_event_dispatcher\Event\Theme
  */
 abstract class BaseThemeSuggestionsEvent extends Event implements EventInterface {
 

@@ -3,9 +3,9 @@
 namespace Drupal\hook_event_dispatcher\Event\Preprocess\Variables;
 
 /**
- * Class ParagraphEventVariables.
+ * Class PageEventVariables.
  */
-class ParagraphEventVariables extends AbstractEntityEventVariables {
+class ParagraphEventVariables extends AbstractEventVariables {
 
   /**
    * Get the paragraph object.
@@ -15,16 +15,6 @@ class ParagraphEventVariables extends AbstractEntityEventVariables {
    */
   public function getParagraph() {
     return $this->variables['paragraph'];
-  }
-
-  /**
-   * Get the Entity.
-   *
-   * @return \Drupal\Core\Entity\EntityInterface
-   *   EckEntity.
-   */
-  public function getEntity() {
-    return $this->getParagraph();
   }
 
 }

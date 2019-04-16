@@ -9,6 +9,8 @@ use Symfony\Component\EventDispatcher\Event;
 
 /**
  * Class UserLoginEvent.
+ *
+ * @package Drupal\hook_event_dispatcher\Event\User
  */
 final class UserLoginEvent extends Event implements EventInterface {
 

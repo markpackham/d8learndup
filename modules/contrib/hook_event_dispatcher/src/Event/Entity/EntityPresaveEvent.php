@@ -6,6 +6,8 @@ use Drupal\hook_event_dispatcher\HookEventDispatcherInterface;
 
 /**
  * Class EntityPresaveEvent.
+ *
+ * @package Drupal\hook_event_dispatcher\Event\Entity
  */
 class EntityPresaveEvent extends BaseEntityEvent {
 

@@ -9,6 +9,8 @@ use Symfony\Component\EventDispatcher\Event;
 
 /**
  * Class JsAlterEvent.
+ *
+ * @package Drupal\hook_event_dispatcher\Event\Theme
  */
 final class JsAlterEvent extends Event implements EventInterface {
 

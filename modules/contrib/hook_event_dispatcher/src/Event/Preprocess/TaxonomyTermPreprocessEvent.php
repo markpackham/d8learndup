@@ -4,11 +4,16 @@ namespace Drupal\hook_event_dispatcher\Event\Preprocess;
 
 /**
  * Class TaxonomyTermPreprocessEvent.
+ *
+ * @package Drupal\preprocess_event\Event
  */
-final class TaxonomyTermPreprocessEvent extends AbstractPreprocessEntityEvent {
+final class TaxonomyTermPreprocessEvent extends AbstractPreprocessEvent {
 
   /**
-   * {@inheritdoc}
+   * Get the hook name.
+   *
+   * @return string
+   *   Hook name.
    */
   public static function getHook() {
     return 'taxonomy_term';

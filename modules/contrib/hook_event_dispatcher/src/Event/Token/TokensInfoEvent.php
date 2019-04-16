@@ -11,6 +11,7 @@ use Symfony\Component\EventDispatcher\Event;
 /**
  * Class TokensInfoEvent.
  *
+ * @package Drupal\hook_event_dispatcher\Event\Token
  * @see hook_token_info
  */
 final class TokensInfoEvent extends Event implements EventInterface {

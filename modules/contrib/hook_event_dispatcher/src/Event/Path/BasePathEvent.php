@@ -7,6 +7,8 @@ use Symfony\Component\EventDispatcher\Event;
 
 /**
  * Class BasePathEvent.
+ *
+ * @package Drupal\hook_event_dispatcher\Event\Path
  */
 abstract class BasePathEvent extends Event implements EventInterface {
 

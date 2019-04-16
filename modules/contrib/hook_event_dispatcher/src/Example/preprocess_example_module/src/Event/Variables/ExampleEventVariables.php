@@ -6,5 +6,7 @@ use Drupal\hook_event_dispatcher\Event\Preprocess\Variables\AbstractEventVariabl
 
 /**
  * Class ExampleEventVariables.
+ *
+ * @package Drupal\preprocess_example_module\Event\Variables\
  */
 class ExampleEventVariables extends AbstractEventVariables {}

@@ -39,8 +39,6 @@ class HookEventDispatcherManagerSpy implements HookEventDispatcherManagerInterfa
 
   /**
    * {@inheritdoc}
-   *
-   * @throws \Drupal\Tests\hook_event_dispatcher\Unit\TooManyEventsException
    */
   public function register(EventInterface $event) {
     $this->eventCount++;

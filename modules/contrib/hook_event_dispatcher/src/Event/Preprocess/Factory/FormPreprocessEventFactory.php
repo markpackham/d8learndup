@@ -11,14 +11,23 @@ use Drupal\hook_event_dispatcher\Event\Preprocess\Variables\FormEventVariables;
 final class FormPreprocessEventFactory implements PreprocessEventFactoryInterface {
 
   /**
-   * {@inheritdoc}
+   * Create the PreprocessEvent with EventVariables embedded.
+   *
+   * @param array $variables
+   *   Variables.
+   *
+   * @return \Drupal\hook_event_dispatcher\Event\Preprocess\FormPreprocessEvent
+   *   Created event.
    */
   public function createEvent(array &$variables) {
     return new FormPreprocessEvent(new FormEventVariables($variables));
   }
 
   /**
-   * {@inheritdoc}
+   * Get the Event hook name.
+   *
+   * @return string
+   *   The hook name.
    */
   public function getEventHook() {
     return FormPreprocessEvent::getHook();

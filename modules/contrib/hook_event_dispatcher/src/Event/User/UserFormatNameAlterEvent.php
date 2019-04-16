@@ -9,6 +9,8 @@ use Symfony\Component\EventDispatcher\Event;
 
 /**
  * Class UserFormatNameAlterEvent.
+ *
+ * @package Drupal\hook_event_dispatcher\Event\User
  */
 final class UserFormatNameAlterEvent extends Event implements EventInterface {
 

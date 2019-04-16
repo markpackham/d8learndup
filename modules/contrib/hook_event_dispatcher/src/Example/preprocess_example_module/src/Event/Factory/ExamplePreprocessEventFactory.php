@@ -8,6 +8,8 @@ use Drupal\preprocess_example_module\Event\ExamplePreprocessEvent;
 
 /**
  * Class ExamplePreprocessEventFactory.
+ *
+ * @package Drupal\preprocess_example_module\Event\Factory
  */
 class ExamplePreprocessEventFactory implements PreprocessEventFactoryInterface {
 
@@ -27,7 +29,10 @@ class ExamplePreprocessEventFactory implements PreprocessEventFactoryInterface {
   }
 
   /**
-   * {@inheritdoc}
+   * Get the Event hook name.
+   *
+   * @return string
+   *   The hook name.
    */
   public function getEventHook() {
     return ExamplePreprocessEvent::getHook();

@@ -8,7 +8,10 @@ namespace Drupal\hook_event_dispatcher\Event\Preprocess;
 final class ViewPreprocessEvent extends AbstractPreprocessEvent {
 
   /**
-   * {@inheritdoc}
+   * Get the hook name.
+   *
+   * @return string
+   *   Hook name.
    */
   public static function getHook() {
     return 'views_view';

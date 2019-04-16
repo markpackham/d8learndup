@@ -4,8 +4,8 @@ description: Registers an extra preprocess event.
 # core: 8.x
 package: Development
 
-# Information added by Drupal.org packaging script on 2019-04-06
-version: '8.x-1.23'
+# Information added by Drupal.org packaging script on 2018-10-19
+version: '8.x-1.20'
 core: '8.x'
 project: 'hook_event_dispatcher'
-datestamp: 1554571387
+datestamp: 1539954189

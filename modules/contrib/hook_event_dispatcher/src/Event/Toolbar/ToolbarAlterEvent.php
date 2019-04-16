@@ -8,6 +8,8 @@ use Symfony\Component\EventDispatcher\Event;
 
 /**
  * Class ToolbarAlterEvent.
+ *
+ * @package Drupal\hook_event_dispatcher\Event\Toolbar
  */
 class ToolbarAlterEvent extends Event implements EventInterface {
 

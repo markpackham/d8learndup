@@ -11,14 +11,23 @@ use Drupal\hook_event_dispatcher\Event\Preprocess\Variables\NodeEventVariables;
 final class NodePreprocessEventFactory implements PreprocessEventFactoryInterface {
 
   /**
-   * {@inheritdoc}
+   * Create the PreprocessEvent with EventVariables embedded.
+   *
+   * @param array $variables
+   *   Variables.
+   *
+   * @return \Drupal\hook_event_dispatcher\Event\Preprocess\NodePreprocessEvent
+   *   Created event.
    */
   public function createEvent(array &$variables) {
     return new NodePreprocessEvent(new NodeEventVariables($variables));
   }
 
   /**
-   * {@inheritdoc}
+   * Get the Event hook name.
+   *
+   * @return string
+   *   The hook name.
    */
   public function getEventHook() {
     return NodePreprocessEvent::getHook();

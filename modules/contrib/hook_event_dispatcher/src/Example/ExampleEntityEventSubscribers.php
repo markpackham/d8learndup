@@ -23,6 +23,8 @@ use Symfony\Component\EventDispatcher\EventSubscriberInterface;
  *   class:'\Drupal\hook_event_dispatcher\Example\ExampleEntityEventSubscribers'
  *   tags:
  *     - { name: 'event_subscriber' }
+ *
+ * @package Drupal\hook_event_dispatcher\Example
  */
 class ExampleEntityEventSubscribers implements EventSubscriberInterface {
 

@@ -12,7 +12,10 @@ use Drupal\hook_event_dispatcher\Service\PreprocessEventPass;
 final class HookEventDispatcherServiceProvider implements ServiceProviderInterface {
 
   /**
-   * {@inheritdoc}
+   * Registers services to the container.
+   *
+   * @param \Drupal\Core\DependencyInjection\ContainerBuilder $container
+   *   The ContainerBuilder to register services to.
    */
   public function register(ContainerBuilder $container) {
     $container->addCompilerPass(new PreprocessEventPass());

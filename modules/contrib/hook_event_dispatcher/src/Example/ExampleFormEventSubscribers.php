@@ -21,6 +21,8 @@ use Symfony\Component\EventDispatcher\EventSubscriberInterface;
  *   class: '\Drupal\hook_event_dispatcher\Example\ExampleFormEventSubscribers'
  *   tags:
  *     - { name: 'event_subscriber' }
+ *
+ * @package Drupal\hook_event_dispatcher\Example
  */
 class ExampleFormEventSubscribers implements EventSubscriberInterface {
 

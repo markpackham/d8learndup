@@ -6,6 +6,8 @@ use Drupal\hook_event_dispatcher\HookEventDispatcherInterface;
 
 /**
  * Class EntityCreateEvent.
+ *
+ * @package Drupal\hook_event_dispatcher\Event\Entity
  */
 class EntityCreateEvent extends BaseEntityEvent {
 

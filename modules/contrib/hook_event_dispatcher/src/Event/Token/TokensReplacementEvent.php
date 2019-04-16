@@ -11,6 +11,7 @@ use Symfony\Component\EventDispatcher\Event;
 /**
  * Class TokensProvideEvent.
  *
+ * @package Drupal\hook_event_dispatcher\Event\Token
  * @see hook_tokens
  */
 final class TokensReplacementEvent extends Event implements EventInterface {
@@ -214,16 +215,16 @@ final class TokensReplacementEvent extends Event implements EventInterface {
    * @throws \UnexpectedValueException
    */
   public function setReplacementValue($type, $token, $replacement) {
-    if (!\is_string($type)) {
+    if (!is_string($type)) {
       throw new \UnexpectedValueException('Type should be a string');
     }
-    if (!\is_string($token)) {
+    if (!is_string($token)) {
       throw new \UnexpectedValueException('Token should be a string');
     }
     if (!$this->forToken($type, $token)) {
       throw new \UnexpectedValueException('Requested replacement is not requested');
     }
-    if (!\is_string($replacement) && !$replacement instanceof MarkupInterface) {
+    if (!is_string($replacement) && !$replacement instanceof MarkupInterface) {
       throw new \UnexpectedValueException('Replacement value should be a string or instanceof MarkupInterface');
     }
     $this->replacementValues["[$type:$token]"] = $replacement;

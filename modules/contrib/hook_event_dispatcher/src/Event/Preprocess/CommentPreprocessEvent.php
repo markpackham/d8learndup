@@ -5,10 +5,13 @@ namespace Drupal\hook_event_dispatcher\Event\Preprocess;
 /**
  * Class CommentPreprocessEvent.
  */
-final class CommentPreprocessEvent extends AbstractPreprocessEntityEvent {
+final class CommentPreprocessEvent extends AbstractPreprocessEvent {
 
   /**
-   * {@inheritdoc}
+   * Get the hook name.
+   *
+   * @return string
+   *   Hook name.
    */
   public static function getHook() {
     return 'comment';

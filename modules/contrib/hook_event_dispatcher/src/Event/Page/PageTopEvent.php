@@ -8,6 +8,8 @@ use Symfony\Component\EventDispatcher\Event;
 
 /**
  * Class PageTopEvent.
+ *
+ * @package Drupal\hook_event_dispatcher\Event\Page
  */
 class PageTopEvent extends Event implements EventInterface {
 

@@ -4,8 +4,10 @@ namespace Drupal\hook_event_dispatcher\Event\Preprocess\Variables;
 
 /**
  * Class NodeEventVariables.
+ *
+ * @package Drupal\hook_event_dispatcher
  */
-class NodeEventVariables extends AbstractEntityEventVariables {
+class NodeEventVariables extends AbstractEventVariables {
 
   /**
    * Get the node.
@@ -15,13 +17,6 @@ class NodeEventVariables extends AbstractEntityEventVariables {
    */
   public function getNode() {
     return $this->variables['node'];
-  }
-
-  /**
-   * {@inheritdoc}
-   */
-  public function getEntity() {
-    return $this->getNode();
   }
 
 }

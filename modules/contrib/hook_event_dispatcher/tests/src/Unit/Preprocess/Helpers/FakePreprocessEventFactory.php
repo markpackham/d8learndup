@@ -42,7 +42,10 @@ final class FakePreprocessEventFactory implements PreprocessEventFactoryInterfac
   }
 
   /**
-   * {@inheritdoc}
+   * Get the Event hook name.
+   *
+   * @return string
+   *   The hook name.
    */
   public function getEventHook() {
     return $this->hook;

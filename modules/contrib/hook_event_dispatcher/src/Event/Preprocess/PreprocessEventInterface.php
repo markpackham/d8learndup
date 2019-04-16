@@ -26,10 +26,10 @@ interface PreprocessEventInterface {
   public static function name();
 
   /**
-   * Get the variables.
+   * Get the template variables.
    *
    * @return \Drupal\hook_event_dispatcher\Event\Preprocess\Variables\AbstractEventVariables
-   *   Variables.
+   *   Template variables.
    */
   public function getVariables();
 
