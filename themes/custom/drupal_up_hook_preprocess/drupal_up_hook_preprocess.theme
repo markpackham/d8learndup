@@ -1,0 +1,26 @@
+<?php
+
+/*
+Implements hook_preprocess
+ */
+function drupal_up_hook_preprocess_preprocess(&$variables, $hook)
+{
+    if ($hook == 'menu') {
+        //kint($variables);
+        foreach ($variables['items'] as &$item) {
+            $item['title'] = $item['title'] . '-Meow!';
+        }
+    }
+    //var_dump($hook);
+}
+
+/*
+Implments hook_preprocess_menu();
+ */
+//Another way to do the above but avoid the if statement
+function drupal_up_hook_preprocess_preprocess_menu(&$variables)
+{
+    foreach ($variables['items'] as &$item) {
+        $item['title'] = $item['title'] . '-Moo!';
+    }
+}
