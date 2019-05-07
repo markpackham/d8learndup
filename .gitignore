@@ -4,7 +4,6 @@ sites/*/private
 sites/*.dd
 sites/*.dd/*
 files/*
-sites/default
 
 # Avoid accidental modification of pantheon.upstream.yml in sites
 # created from this upstream
