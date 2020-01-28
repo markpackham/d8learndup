@@ -1,0 +1,20 @@
+<?php
+/**
+ * @file
+ * Contains drupalup_withbody.module
+ */
+
+/**
+ * Implements hook_form_alter().
+ */
+function drupalup_withbody_form_alter(&$form, \Drupal\Core\Form\FormStateInterface $form_state, $form_id)
+{
+    if (in_array($form_id, ['node_article_form', 'node_article_edit_form'])) {
+        $form['body']['#states'] = [
+            'visible' => [
+                ':input[name="field_with_body[value]"]' => ['checked' => true],
+            ],
+        ];
+
+    }
+}

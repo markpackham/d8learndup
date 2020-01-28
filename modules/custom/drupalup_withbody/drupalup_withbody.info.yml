@@ -1,0 +1,5 @@
+name: "Drupal Up with body Article"
+type: module
+description: "Node Article Add + Edit Form - Hide Body Field Toggle learned from https://www.youtube.com/watch?v=D9hu5uaQ0Fk"
+core: 8.x
+package: "Custom"
